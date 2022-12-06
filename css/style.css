@@ -1,0 +1,331 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&family=Montserrat:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&family=Raleway:wght@300&display=swap');
+
+
+
+/* variables */
+:root {
+  --primaryColor: #6d1414;
+  --secundaryColor: #3D3447;
+  --titleSize: 40px;
+  --parrafoSize: 20px;
+  --fontFamily: "Montserrat", sans-serif;
+}
+
+h1,h2, h3, h4, h5, h6{
+  font-family: 'Montserrat', sans-serif;
+}
+
+p,a, li, label{
+  font-family: 'Raleway', sans-serif;
+}
+/* color de la barra de navegacion */
+.nav-pagina {
+  background-color: #3D3447;
+}
+/* estilos del texto de la barra */
+.nav-pagina ul li a{
+  font-size: 20px;
+  color: #ffffff;
+  padding: 10px;
+ 
+}
+
+.whatsapp{
+  position: fixed;
+  right: 10px;
+  bottom: 30px;
+  z-index: 666;
+}
+/* estilos del header */
+#hero {
+  background: #6d1414;
+  padding: 130px 0;
+  height: 600px ;
+}
+
+/* copiar esto para poner cuadros de colores de fondo eje */
+#hero .container-foto{
+  position: relative;
+}
+
+#hero .container-foto img{
+  z-index: 2;
+  position: relative;
+}
+
+#hero .container-foto::before{
+  width: 63%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 30px;
+  background: var(--secundaryColor);
+  z-index: 0;
+}
+
+#hero .container-info{
+    padding-left: 20px;
+}
+
+#hero .container-info h1{
+  color: #fff;
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+
+#hero .container-info p{
+  color: #000;
+  font-size: var(--parrafoSize);
+}
+
+/* Perfil */
+
+/* se organiza la posicion de los textos */
+#perfil{
+  background: var(--secundaryColor);
+  width: 100%;
+  position: relative;
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* titulos */
+#perfil h2{
+  color: #fff;
+  font-size: var(--titleSize);
+  font-weight: 700;
+}
+/* parrafos */
+#perfil p {
+  color: #e0e0e0;
+  font-size: var(--parrafoSize);
+  top: 50px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+/* separar titulo de parrafos */
+#perfil .row{
+  padding-top: 50px;
+}
+
+/* color de los parrafos */
+#perfil .card-services{
+  background: #3A3939;
+  border-radius: 3px;
+  position:relative;
+  padding-top: 50 px;
+}
+
+#perfil .card-services-img{
+  background: #493f55;
+  border-radius: 3px;
+  position:relative;
+  padding-top: 50 px;
+}
+
+#perfil .container-right{
+    position: relative;
+    padding-top: 90px;
+    position: relative;
+    z-index: 0;
+}
+
+#perfil .container-right img {
+  position: relative;
+  left: 40px;
+}
+
+
+#experiencia{
+  background: var(--primaryColor);
+  width: 100%;
+  position: relative;
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* titulos */
+#experiencia h2{
+  color: #fff;
+  font-size: var(--titleSize);
+  font-weight: 700;
+}
+/* parrafos */
+#experiencia p {
+  color: #e0e0e0;
+  font-size: var(--parrafoSize);
+  top: 50px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+#experiencia .row{
+  padding-top: 50px;
+}
+
+#experiencia .card-services{
+  background: #3A3939;
+  border-radius: 3px;
+  position:relative;
+  padding-top: 50 px;
+}
+
+/* Portafolio */
+#portafolio{
+  background: var(--secundaryColor);
+  width: 100%;
+  position: relative;
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* titulos */
+#portafolio h2{
+  color: #fff;
+  font-size: var(--titleSize);
+  font-weight: 700;
+}
+/* parrafos */
+#portafolio p {
+  color: #e0e0e0;
+  font-size: var(--parrafoSize);
+  top: 50px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+#portafolio .row{
+  padding-top: 50px;
+}
+
+#portafolio .card-services{
+  background: #3A3939;
+  border-radius: 3px;
+  position:relative;
+  padding-top: 50 px;
+}
+
+#portafolio .container-left{
+  position: relative;
+  padding-top: 90px;
+  position: relative;
+  z-index: 0;
+}
+
+#portafolio .container-left img {
+position: relative;
+left: -60px;
+}
+
+#portafolio .container-foto{
+  position: relative;
+}
+
+#portafolio .container-foto img{
+  z-index: 2;
+  position: relative;
+}
+
+#portafolio .container-foto::before{
+  width: 83%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 30px;
+  background: var(--primaryColor);
+  z-index: 0;
+}
+
+
+#contactos{
+  background: var(--primaryColor);
+  width: 100%;
+  position: relative;
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* titulos */
+#contactos h2{
+  color: #fff;
+  font-size: var(--titleSize);
+  font-weight: 700;
+}
+/* parrafos */
+#contactos p {
+  color: #e0e0e0;
+  font-size: var(--parrafoSize);
+  top: 50px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+#contactos .row{
+  padding-top: 50px;
+}
+
+#contactos .card-services{
+  background: #3A3939;
+  border-radius: 3px;
+  position:relative;
+  padding-top: 50 px;
+}
+
+#habilidades{
+  background: #51475E;
+  width: 100%;
+  position: relative;
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* titulos */
+#habilidades h2{
+  color: #fff;
+  font-size: var(--titleSize);
+  font-weight: 700;
+}
+/* parrafos */
+#habilidades p {
+  color: #e0e0e0;
+  font-size: var(--parrafoSize);
+  top: 50px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+#habilidades .row{
+  padding-top: 50px;
+}
+
+#habilidades .card-services{
+  background: #3A3939;
+  border-radius: 3px;
+  position:relative;
+  padding-top: 50 px;
+}
+
+
+
+
+
+footer{
+  width: 100%;
+  position:relative;
+  background: #6D1414;
+  padding: 40px;
+  text-align:center;
+}
+footer p{
+  color: #e0e0e0;
+  font-size: var(--parrafoSize);
+  top: 50px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
